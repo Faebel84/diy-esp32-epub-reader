@@ -44,7 +44,7 @@ And if you find bugs, feel free to report (or better yet, fix!) them :)
 Make sure you clone recursively - the code uses git submodules.
 
 ```
-git clone --recursive git@github.com:atomic14/esp32-ereader.git
+git clone --recursive git@github.com:Faebel84/diy-esp32-epub-reader.git
 ```
 
 # What boards does it work on?
