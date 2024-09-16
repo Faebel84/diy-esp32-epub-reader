@@ -1,6 +1,7 @@
 #include <esp_log.h>
 #include "Board.h"
 #include "Epdiy.h"
+#include "M5Stack.h"
 #include "Lilygo_t5_47.h"
 #include "M5Paper.h"
 #include <SPIFFS.h>
@@ -18,6 +19,9 @@ Board *Board::factory()
 #endif
 #ifdef BOARD_TYPE_M5_PAPER
   return new M5Paper();
+#endif
+#ifdef BOARD_TYPE_M5_STACK
+  return new M5Stack();
 #endif
 }
 
