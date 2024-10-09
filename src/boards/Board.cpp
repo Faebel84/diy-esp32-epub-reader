@@ -4,6 +4,7 @@
 #include "M5Stack.h"
 #include "Lilygo_t5_47.h"
 #include "M5Paper.h"
+#include "ESP32DEV_7IN5b.h"
 #include <SPIFFS.h>
 #include <SDCard.h>
 #include "battery/ADCBattery.h"
@@ -22,6 +23,9 @@ Board *Board::factory()
 #endif
 #ifdef BOARD_TYPE_M5_STACK
   return new M5Stack();
+#endif
+#ifdef BOARD_TYPE_ESP32DEV_7IN5b
+  return new ESP32DEV_7IN5b();
 #endif
 }
 
