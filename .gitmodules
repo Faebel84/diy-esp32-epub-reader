@@ -7,3 +7,4 @@
 [submodule "lib/epdiy"]
 	path = lib/epdiy
 	url = https://github.com/Faebel84/epdiy-rotation.git
+	branch = 7in5-Mod
